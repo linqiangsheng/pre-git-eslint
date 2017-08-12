@@ -1,0 +1,34 @@
+{
+    "name": "pre-git-eslint",
+    "version": "0.0.22",
+    "description": "add pre-commit hook into git",
+    "main": "index.js",
+    "scripts": {
+        "postinstall": "node ./lib/index.js",
+        "prepare": "babel ./src --out-dir ./lib",
+        "start": "babel-node ./src/index.js",
+        "clear": "rm ./git/hooks/pre-commit",
+        "preuninstall": "node ./lib/delete.js"
+    },
+    "keywords": [
+        "pre-git",
+        "pre-commit",
+        "eslint"
+    ],
+    "repository": {
+        "type": "Git",
+        "url": "git@gitlab.gz.cvte.cn:linqiangsheng/pre-git-commit-eslint.git"
+    },
+    "license": "ISC",
+    "author": "linqiangsheng@cvte.com",
+    "dependencies": {
+        "babel-polyfill": "^6.23.0"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.24.0",
+        "babel-core": "^6.7.2",
+        "babel-plugin-transform-regenerator": "^6.24.1",
+        "babel-preset-es2015": "^6.24.0",
+        "babel-preset-stage-0": "^6.5.0"
+    }
+}
