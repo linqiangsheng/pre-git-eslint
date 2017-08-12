@@ -1,6 +1,6 @@
 {
     "name": "pre-git-eslint",
-    "version": "0.0.22",
+    "version": "0.0.1",
     "description": "add pre-commit hook into git",
     "main": "index.js",
     "scripts": {
@@ -17,10 +17,10 @@
     ],
     "repository": {
         "type": "Git",
-        "url": "git@gitlab.gz.cvte.cn:linqiangsheng/pre-git-commit-eslint.git"
+        "url": "git@github.com:linqiangsheng/pre-git-eslint.git"
     },
     "license": "ISC",
-    "author": "linqiangsheng@cvte.com",
+    "author": "jay.lam.co@gmail.com",
     "dependencies": {
         "babel-polyfill": "^6.23.0"
     },
